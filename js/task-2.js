@@ -43,7 +43,7 @@ function newGallery(arr) {
     .map(
       ({ url, alt }) =>
         `<li>
-          <img src="${url}" alt="${alt}" width = '500px'>
+          <img src="${url}" alt="${alt}" width= '360px'>
         </li>`
     )
     .join("");
