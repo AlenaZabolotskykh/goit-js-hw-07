@@ -46,11 +46,13 @@ const boxes = document.querySelector('#boxes')
 // console.log(boxes)
 
 
+
+
 function createBoxes(amount) {
+  let size = 30
 for (let i = 0; i < amount; i++) {
   const newBox = document.createElement('div')
-  let size = 30
-  newBox.style.height = `${size}px`,
+   newBox.style.height = `${size}px`,
   newBox.style.width =  `${size}px`,
   newBox.style.backgroundColor = getRandomHexColor()
  boxes.append(newBox);  
