@@ -50,14 +50,16 @@ const boxes = document.querySelector('#boxes')
 
 function createBoxes(amount) {
   let size = 30
+  const fragment = document.createDocumentFragment()
 for (let i = 0; i < amount; i++) {
   const newBox = document.createElement('div')
    newBox.style.height = `${size}px`,
   newBox.style.width =  `${size}px`,
   newBox.style.backgroundColor = getRandomHexColor()
- boxes.append(newBox);  
+ fragment.append(newBox);  
  size +=10
 }
+boxes.append(fragment)
 }
 
 createButton.addEventListener('click', addBox)
